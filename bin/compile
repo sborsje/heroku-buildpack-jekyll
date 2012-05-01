@@ -20,5 +20,8 @@ EOF
 echo "Running Jekyll" | indent
 export GEM_HOME=$1/.gems
 export PATH=$1/.gems/bin:$PATH
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
 cd $1
 $1/.gems/bin/jekyll | indent
